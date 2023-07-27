@@ -1,0 +1,110 @@
+.post {
+    border-radius: 10px;
+    background-color: white;
+    color: #000;
+    position: relative;
+
+}
+
+.postwrapper {
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
+}
+
+.postwrapper .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userDetails img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userDetails .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details .name {
+    font-weight: 600;
+}
+
+.details .date {
+    font-size: 12px;
+    color: gray;
+}
+
+.content img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.interactions {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.interactions .item {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-style: 12px;
+}
+
+.post .dropdown {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    width: 30%;
+    /* height: 20%; */
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    color: black;
+}
+
+.post .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post .dropdown li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post .dropdown li:hover {
+    background: #f5f5f5;
+}
+
+.post .dropdown li svg {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}

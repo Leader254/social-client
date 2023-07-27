@@ -1,0 +1,118 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.navbar>.container>.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar>.container>.left span {
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+}
+
+.navbar>.container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.navbar>.container .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar>.container .right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.navbar>.container .user {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.navbar>.container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user .dropdown {
+    height: 15vh;
+    width: 15vw;
+    /* box-shadow: -2px 4px 61px 35px rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    position: absolute;
+    top: 33px;
+    right: 40px;
+    justify-content: flex-start;
+    display: flex;
+    display: flex;
+    background: #d5d4d4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+.user .dropdown ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user .dropdown li {
+    /* margin-top: 10px; */
+    display: flex;
+    /* align-items: center; */
+    padding: 10px;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .navbar>.container input {
+        display: none;
+    }
+
+    .user .username {
+        display: none;
+    }
+}
